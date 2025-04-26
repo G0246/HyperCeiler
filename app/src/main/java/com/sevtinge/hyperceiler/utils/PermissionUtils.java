@@ -33,6 +33,25 @@ import java.util.List;
 
 public class PermissionUtils {
 
+    // 权限申请
+    public static void init(Activity activity) {
+        requestPermissions(activity, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1,
+            // 实现接口方法
+            new OnPermissionListener() {
+                @Override
+                public void onPermissionGranted(Context context) {
+                    // 获取权限成功
+                }
+
+                @Override
+                public void onPermissionDenied() {
+                    // 获取权限失败
+                    activity.finish();
+                }
+            }
+        );
+    }
+
     //权限项数组
     public static final String[] PERMISSIONS = {
             Manifest.permission.READ_PHONE_STATE,
