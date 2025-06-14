@@ -19,7 +19,6 @@
   -->
 <resources>
     <string name="version_update">Có phiên bản mới</string>
-    <string name="about_copy_right">© 2023-2025 Người đóng góp Sevtinge &amp; HyperCeiler.</string>
     <!--Introduction to Xposed Modules-->
     <string name="new_permission_wifi_state_desc">thêm và xóa tập tin trên bộ nhớ trong thiết bị</string>
     <string name="new_permission_location_desc">được sử dụng để cung cấp các dịch vụ như vĩ độ và kinh độ</string>
@@ -437,6 +436,11 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_framework_allow_disable_protected_package">Cho phép tắt các ứng dụng được bảo vệ</string>
     <string name="system_framework_disable_miui_watermark">Tắt hình mờ bản quốc tế</string>
     <string name="system_framework_bypass_unknown_sources_restrictions">Bỏ qua các hạn chế nguồn không xác định</string>
+    <string name="system_framework_bypass_force_mi_appstore">Cho phép chọn ứng dụng của bên thứ ba khi nhảy đến CH Play</string>
+    <string name="system_framework_market_use_detailmini">Luôn mở trong cửa sổ nổi khi chuyển đến Xiaomi GetApps</string>
+    <string name="system_framework_market_use_detailmini_desc">Bỏ qua hạn chế mà một ứng dụng không thể chuyển hướng đến trang chi tiết của ứng dụng khác trong GetApps mà không có appClientId</string>
+    <string name="system_framework_bypass_force_downloadui">Bỏ qua việc buộc dùng Download Manager khi mở trang tải xuống</string>
+    <string name="system_framework_bypass_force_downloadui_desc">Giải quyết vấn đề nhảy không đúng khi nhấp vào \"Xem tải xuống\" trong Chia sẻ nhanh</string>
     <!--Package Manager Service-->
     <string name="system_framework_corepatch_title">Quản lý cài đặt gói</string>
     <string name="system_framework_core_patch_downgr">Cho phép hạ cấp</string>
@@ -476,6 +480,9 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="camera_custom_watermark">Tùy chỉnh hình mờ thiết bị</string>
     <string name="camera_custom_watermark_manufacturer">Thông tin nhà sản xuất</string>
     <string name="camera_custom_watermark_device">Thông tin thiết bị</string>
+    <string name="camera_unlock_4k60">Mở khóa 4K 60fps</string>
+    <string name="camera_unlock_leica">Mở khóa giao diện và tính năng tùy chỉnh của Leica</string>
+    <string name="camera_super_high_quality">Mở khóa chất lượng ảnh siêu cao</string>
     <string name="camera_shot_hand_gesture">Mở khóa Cử chỉ chụp ảnh</string>
     <string name="camera_settings_lab_options">Mở khóa Tính năng thử nghiệm</string>
     <string name="camera_settings_track_eyes">Mở khóa Theo dõi mắt người</string>
@@ -704,9 +711,14 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_status_bar_strong_toast_test_long_text">Đầu ra văn bản dài</string>
     <string name="system_ui_status_bar_strong_toast_test_short_text_0">Văn bản</string>
     <string name="system_ui_status_bar_strong_toast_test_long_text_1">Đây là một đoạn văn bản dài sẽ được xuất ra ở dạng cuộn</string>
-    <string name="system_ui_statusbar_music_tip">Lưu ý trước khi sử dụng:\n• Sau khi bật tính năng này, hãy kiểm tra và khởi động lại Giao diện người dùng hệ thống và phạm vi âm nhạc tương ứng.\n• Tính năng này cần được sử dụng với mô-đun \"Lyric Getter\".\n• Đảm bảo rằng thông báo \"Tập trung vào lời bài hát\" được bật trong danh mục thông báo của ứng dụng âm nhạc tương ứng và trong cài đặt thông báo Focus của ứng dụng.</string>
+    <string name="system_ui_statusbar_music_tip">Lưu ý trước khi sử dụng:\n• Sau khi bật tính năng này, hãy kiểm tra và khởi động lại Giao diện người dùng hệ thống và phạm vi âm nhạc tương ứng.\n• Tính năng này cần được sử dụng với mô-đun \"SuperLyric\".\n• Đảm bảo rằng thông báo \"Tập trung vào lời bài hát\" được bật trong danh mục thông báo của ứng dụng âm nhạc tương ứng và trong cài đặt thông báo Focus của ứng dụng.</string>
     <string name="system_ui_statusbar_music_notification">Thông báo lời bài hát Focus</string>
-    <string name="system_ui_statusbar_music_cusiom_title">Tùy chọn hiển thị</string>
+    <string name="system_ui_statusbar_music_show_app_title">Thông báo đăng ký trên ứng dụng</string>
+    <string name="system_ui_statusbar_music_show_app_desc">Sau khi mở, bạn cần kiểm tra phạm vi của ứng dụng âm nhạc</string>
+    <string name="system_ui_statusbar_music_cusiom_notific_title">Tùy chọn hiển thị</string>
+    <string name="system_ui_statusbar_music_show_notific_title">Hiển thị thông báo lời bài hát</string>
+    <string name="system_ui_statusbar_music_hide_aod_title">Không hiển thị thông báo tập trung dưới màn hình</string>
+    <string name="system_ui_statusbar_music_cusiom_statusbar_title">Cài đặt hiển thị thanh trạng thái</string>
     <string name="system_ui_statusbar_music_hide_clock_title">Ẩn đồng hồ thanh trạng thái</string>
     <string name="system_ui_statusbar_music_hide_clock_desc">Ẩn đồng hồ trên thanh trạng thái khi hiển thị lời bài hát focus và điều chỉnh hoạt ảnh của mục Thông báo thả xuống.</string>
     <string name="system_ui_statusbar_music_click_clock_title">Nhấp để hiện đồng hồ</string>
@@ -756,14 +768,13 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_control_center_media_control_panel_background_mix_overlay">Độ mờ của lớp phủ nền</string>
     <string name="system_ui_control_center_media_control_media_button_title">Phím phương tiện</string>
     <string name="system_ui_control_center_media_control_media_seekbar_title">Phím tua</string>
-    <string name="system_ui_control_center_compact_notice">Thu gọn thông báo</string>
-    <string name="system_ui_control_center_compact_notice_desc">Giảm khoảng cách thông báo dọc</string>
     <string name="system_ui_control_center_redirect_notice">Chuyển hướng cài đặt thông báo</string>
     <string name="system_ui_control_center_redirect_notice_desc">Mở chuyển hướng cài đặt thông báo đích thay vì áp dụng cài đặt thông báo</string>
     <string name="system_ui_control_center_show_weather">Hiển thị thời tiết</string>
     <string name="system_ui_control_center_show_weather_city">Hiện thị thành phố</string>
     <string name="system_ui_control_center_disable_device_managed">Ẩn lời nhắc giám sát mạng</string>
     <string name="system_ui_control_center_hide_edit_botton">Ẩn nút sửa</string>
+    <string name="system_ui_control_center_tile_super_blur">Ô siêu mờ</string>
     <string name="system_ui_control_center_mute_visible_notice">Tắt âm thông báo khi màn hình bật</string>
     <string name="system_ui_control_center_unimportant_notification">Thu gọn vào thông báo lịch sử bị cấm</string>
     <string name="system_ui_control_center_expand_notification">Mở rộng thông báo</string>
@@ -792,6 +803,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="system_ui_control_center_card_tiles_customization_not_add">Chưa thêm</string>
     <string name="system_ui_control_center_unlock_blur_supported">Xóa hạn chế làm mờ thông báo</string>
     <string name="system_ui_control_center_unlock_blur_supported_desc">Không có hạn chế về độ mờ nền đối với các vật liệu cao cấp chính thức chỉ dành cho việc xóa chủ đề của bên thứ ba</string>
+    <string name="system_ui_control_center_unlock_all_focus">Xóa danh sách cho phép thông báo tập trung</string>
     <string name="system_ui_control_center_remove_notif_num_limit">Xóa giới hạn số lượng thông báo</string>
     <string name="system_ui_control_center_remove_notif_num_limit_desc">Cho phép hiển thị 10 tới 17 thông báo trở lên</string>
     <string name="system_ui_control_center_opt_notification_element_background_color">Tối ưu trộn màu nền của đèn thông báo</string>
@@ -1272,7 +1284,6 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="mediaeditor_unlock_leica_filter_title">Mở khóa bộ lọc Leica</string>
     <string name="mediaeditor_unlock_leica_filter_desc">Chỉ hỗ trợ một số phiên bản</string>
     <string name="mediaeditor_unlock_aigc">Mở khóa AIGC</string>
-    <!--Mi Share-->
     <!--Wallpaper-->
     <string name="miwallpaper">Hình nền</string>
     <string name="miwallpaper_unlock_super_wallpaper">Mở khoá Siêu hình nền</string>
@@ -1321,6 +1332,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="powerkeeper_prevent_recovery_of_battery_optimization_whitelist">Ngăn chặn khôi phục danh sách trắng của tối ưu hoá pin</string>
     <string name="powerkeeper_disable_get_display_ctrl_code">Tắt để lấy mã điều khiển hiển thị</string>
     <string name="powerkeeper_gms_doze_fix">Cho phép GMS kết nối với mạng bất cứ lúc nào</string>
+    <string name="powerkeeper_conservative_millet">Làm cho Millet cẩn trọng</string>
     <!--Screen Recorder-->
     <string name="screenrecorder">Quay màn hình</string>
     <string name="screen_recorder_force_support_playback_capture">Cho phép AOSP hỗ trợ ghi hình</string>
@@ -1428,6 +1440,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="security_center_unlock_screen_time">Hiển thị dữ liệu màn hình</string>
     <string name="security_center_unlock_screen_time_desc">Hiển thị phần \"Màn hình\" trên cùng trong mục pin và các ứng dụng &amp; thời gian sử dụng</string>
     <string name="security_center_unlock_gun_service">Mở khoá Tâm súng ảo</string>
+    <string name="security_center_remove_game_toast">Xóa cửa sổ thông báo bật lên ở chế độ trò chơi</string>
     <string name="security_center_disable_remove_screen_hold_on">Vô hiệu màn hình luôn sáng</string>
     <string name="security_center_unlock_memc">Mở khoá MEMC</string>
     <string name="security_center_unlock_enhance_contours">Mở khóa Tăng cường đường viền</string>
@@ -1457,7 +1470,6 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="trustservice">Dịch vụ MiTrust</string>
     <string name="trustservice_disable_mrm">Tắt phát hiện rủi ro</string>
     <string name="trustservice_disable_mrm_desc">Tính năng thử nghiệm. Bạn có thể không sử dụng được tính năng này vì vi phạm luật pháp địa phương hoặc quốc gia.</string>
-    <!--Smart cards-->
     <!--Weather-->
     <string name="weather">Thời tiết</string>
     <string name="weather_device_level_title">Tốc độ của hoạt ảnh</string>
@@ -1536,7 +1548,7 @@ Chức năng này là chức năng thử nghiệm có độ ổn định cao</st
     <string name="bypass_udk_word_legal_check_caption">Đăng ký ASR mà không có Internet</string>
     <string name="bypass_udk_word_legal_check_description">Cho phép đăng ký ASR mà không cần internet</string>
     <string name="voicetrigger_accuracy_percent_caption">Đặt độ chính xác ASR</string>
-    <string name="voicetrigger_accuracy_percent_description">Giá trị lớn hơn có nghĩa là khó phát hiện hơn. Đối với \"XiaoAI\", giá trị mặc định của nó là 0%. Sau khi thiết lập xong cần nhập lại từ đánh thức</string>
+    <string name="voicetrigger_accuracy_percent_description" formatted="false">Giá trị lớn hơn có nghĩa là khó phát hiện hơn. Đối với \"XiaoAI\", giá trị mặc định của nó là 0%. Sau khi thiết lập xong cần nhập lại từ đánh thức</string>
     <!--Other-->
     <string name="various">Khác</string>
     <string name="app_version_not_supported">Phiên bản không hỗ trợ</string>

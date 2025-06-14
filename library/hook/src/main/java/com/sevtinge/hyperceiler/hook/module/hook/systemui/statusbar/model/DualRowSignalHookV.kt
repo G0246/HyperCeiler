@@ -68,7 +68,7 @@ class DualRowSignalHookV : BaseHook() {
         mPrefsMap.getInt("system_ui_statusbar_mobile_network_icon_size", 10)
     }
     private val verticalOffset by lazy {
-        mPrefsMap.getInt("system_ui_statusbar_mobile_network_icon_vertical_offset", 8)
+        mPrefsMap.getInt("system_ui_statusbar_mobile_network_icon_vertical_offset", 40)
     }
 
     private val selectedIconStyle by lazy {
@@ -199,9 +199,9 @@ class DualRowSignalHookV : BaseHook() {
                     adjustSmallXX(smallRoam)
                     adjustSmallXX(satellite)
 
-                    if (verticalOffset != 8) {
+                    if (verticalOffset != 40) {
                         signalGroup.translationY = DisplayUtils.dp2px(
-                            (verticalOffset - 8) * 0.5f
+                            (verticalOffset - 40) * 0.1f
                         ).toFloat()
                     }
                     val mobileSignalLp = mobileSignal.layoutParams as FrameLayout.LayoutParams
@@ -312,16 +312,16 @@ class DualRowSignalHookV : BaseHook() {
      *   -> access$setTintColor
      *     14系列没有此方法导致移动网络类型单独显示不能正常反色
      *
-     * K60U(OS2.0.0.31) / 2025-12-06:
+     * K60U(OS2.0.0.31) / 2024-12-06:
      *   -> setImageResWithTintLight
      *   -> access$resetImageWithTintLight
      *   -> setTintColor
      *
-     * 13系列 / 2025-12-06:
+     * 13系列 / 2024-12-06:
      *   -> access$setImageResWithTintLight
      *   access$resetImageWithTintLight 和 access$setTintColor 改成了 lambda 内联
      *
-     * 14系列 / 2025-12-07:
+     * 14系列 / 2024-12-07:
      *   同上
      */
     private fun setDualSignalIcon() {
