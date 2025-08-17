@@ -74,6 +74,16 @@ public class SettingsPage extends PageFragment
         String language = LanguageHelper.getLanguage(requireContext());
         int value = LanguageHelper.resultIndex(LanguageHelper.appLanguages, language);
         mLanguage.setValueIndex(value);
+
+        mIconModeValue.setOnPreferenceChangeListener((preference, o) -> {
+            // 属实无奈，页面有问题，后面再修
+            getSharedPreferences()
+                .edit()
+                .putString("prefs_key_settings_icon_mode", (String) o)
+                .apply();
+            return true;
+        });
+
         mLanguage.setOnPreferenceChangeListener((preference, o) -> {
             getSharedPreferences()
                 .edit()
@@ -142,6 +152,10 @@ public class SettingsPage extends PageFragment
     @Override
     public boolean onPreferenceChange(@NonNull Preference preference, Object o) {
         if (preference == mIconModePreference) {
+            getSharedPreferences()
+                .edit()
+                .putString("prefs_key_settings_icon", (String) o)
+                .apply();
             setIconMode(Integer.parseInt((String) o));
         }
         return true;

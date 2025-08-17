@@ -186,8 +186,8 @@ object NewNetworkSpeed : BaseHook() {
     }
 
     private fun getTrafficBytes(): Pair<Long, Long> {
-        var tx = 0L
-        var rx = 0L
+        var tx = -1L
+        var rx = -1L
         runCatching {
             val list = NetworkInterface.getNetworkInterfaces()
             list?.asSequence()
